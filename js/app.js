@@ -60,3 +60,5 @@ productos.forEach(({ nombre, precio, cantidad }) => {
 
 const total = productos.reduce((t, { precio, cantidad }) => t + calcularTotal(precio, cantidad), 0);
 document.querySelector("#total").textContent = `Total con IGV (${iva * 100}%): ${formatearMoneda(total)}`;
+
+//
